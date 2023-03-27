@@ -3,7 +3,7 @@
 
 ## Regras:
 
-Reuniões segunda após aula -presencial.
+Reuniões segunda após aula -presencial.<br>
 Na ausência avisar com antecedência e se atualizar após reunião.
 Tomadas de decisão serão feitas em reunião, ausentes serão notificados.
 Atualizar dificuldades com demanda.
