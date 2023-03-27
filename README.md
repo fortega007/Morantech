@@ -12,3 +12,4 @@
 7-Colocar em ATA todas as tarefas não realizadas e atrasos.<br/>
 8-Validação do grupo com atualizações de tarefas.<br/>
 9-Atualizações do GIT deverão ser notificadas no grupo.<br/>
+10- Toda semana será trocada a função de Product Owner
