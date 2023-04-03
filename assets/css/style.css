@@ -10,6 +10,7 @@
 
 :root {
     --bg_color_tm_light: #e8f7f9;
+    --bg_page_tm_light:#fd5e5eaa;
     --borda_color_tm_light: #ad1212;
     --letra_dest_color_segundaria_tm_light: #b40000;
     --letra_color_primaria_tm_light: #1e1e1e;
@@ -19,7 +20,12 @@
 
 
 body {
-    background: var(--bg_color_tm_light);
+    background: var(--bg_page_tm_light);
+    background: linear-gradient(335deg, var(--bg_page_tm_light) 25%, var(--bg_color_tm_light) 72%, var(--bg_color_tm_light) 100%);
+}
+
+.menu{
+background: var(--bg_color_tm_light);
 }
 
 .menu ul li a {
