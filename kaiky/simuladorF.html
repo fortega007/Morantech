@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Finaceiro - MoranTech</title>
+    <link rel="stylesheet"  href="./css/simulador.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titulo">Bem-vindo(a) à Morantech!</h1>
+      <div class="paragrafos">
+        <p>
+          Como sabemos, um dos principais fatores para o desperdício/perda do
+          morango é a falta do controle e monitoramento de temperatura e umidade
+          da fruta.
+        </p>
+        Esse desperdício gira em torno de 30% da quantidade total.
+        <p>
+          O objetivo da Morantech é reduzir esse desperdício a 5% e aumentar os
+          ganhos de sua empresa.
+          <br />
+        </p>
+      </div>
+      <h2>Digite os dados pedidos abaixo e faça sua simulação:</h2>
+      <div>
+        Quantos<b> Kg</b> de morangos serão transportados em um caminhão?
+        <input id="input_qtdMorangos" /><br />
+        Digite o valor pelo <b>Kg</b> do morango:
+        <input id="input_valorMorango" /><br />
+        <button onclick="simule()" class="botao">clique e simule</button>
+        <p id="p_resultado"></p>
+      </div>
+      <div class="resultado">
+        <div class="caixa1">
+          <p id="p_resposta1"></p>
+        </div>
+        <div class="caixa2">
+          <p id="p_resposta2"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function simule() {
+    var qtdM = Number(input_qtdMorangos.value);
+
+    var valorMorango = Number(input_valorMorango.value);
+
+    var perdaMorango = qtdM * 0.3;
+    var perdaMoran = qtdM * 0.05;
+
+    var custoTotal = qtdM * valorMorango;
+    var perdaTotal = custoTotal * 0.3;
+
+    var custo = custoTotal - perdaTotal;
+
+    var perdaComMoran = custoTotal * 0.05;
+    var custoMoran = custoTotal - perdaComMoran;
+
+    var retorno = perdaTotal - perdaComMoran;
+
+    if (qtdM <= 0) {
+      alert("Por favor digite um número válido!");
+    }
+    if (qtdM > 0) {
+      p_resultado.innerHTML = `Transportando <b>${qtdM}Kg</b> com o valor de <b>R$${valorMorango}</b>, teria os seguintes resultados:`;
+
+      p_resposta1.innerHTML += `<h4>Sem a tecnologia MoranTech:</h4> Transportando <b>${qtdM} Kg</b> de morango; <br> Ocorreria uma perda de <b>${perdaMorango} Kg</b> ;<br> Assim sendo iria obter um lucro de <b>R$${custo}</b>.`;
+
+      p_resposta2.innerHTML += `<h4>Com a tecnologia MoranTech:</h4> Transportando os mesmos <b>${qtdM} Kg </b> de morango ;<br> Teria uma uma perda de <b>${perdaMoran} Kg ;</b> <br> Sendo assim iria obter um lucro de <b>RS${custoMoran}</b> ;<br> tendo um acrescimo nos ganhos de <b>RS${retorno}</b>.`;
+    }
+  }
+</script>
