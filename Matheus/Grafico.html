@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graficos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body style="display: flex;;background-color: honeydew;display:inline-table">
+    <div>
+        <canvas id="myChart" style="position: relative; height:40vh; width:50vw"></canvas></canvas>
+    </div>
+    <div>
+        <canvas id="myChart2" style="position: relative; height:40vh; width:50vw"></canvas>
+    </div>
+
+    <div>
+        <canvas id="myChart3" style="position: relative; height:40vh; width:50vw"></canvas>
+    </div>
+</body>
+<script>
+    const labels = [
+        '03/04/2023  12:00:00',
+        '03/04/2023  12:20:00', //TEMPO GRAFICO LINHA 1
+        '03/04/2023  12:40:01',
+        '03/04/2023  13:00:01',
+        '03/04/2023  13:20:02',
+        '03/04/2023  13:40:02'
+    ]
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99,132)',
+            data: [23, 22, 25, 5, 5, 6],
+        },                                          // GRAFICO 1
+        {
+            label: 'Umidade',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0,255)',
+            data: [80, 82, 80, 85, 80, 83],
+        }
+        ]
+    };
+    const config = {
+        type: 'line',
+        data: data,         // GRAFICO1 
+        options: {}
+    };
+
+
+    const labels2 = [
+        '03/04/2023  12:00:00',
+        '03/04/2023  12:20:00',
+        '03/04/2023  12:40:01', // TEMPO GRAFICO BARRA 2
+        '03/04/2023  13:00:01',
+        '03/04/2023  13:20:02',
+        '03/04/2023  13:40:02'
+    ];
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99,132)',
+            data: [23, 22, 25, 5, 5, 6],
+        },                                              // GRAFICO 2 
+        {
+            label: 'Umidade',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0,255)',
+            data: [45, 50, 40, 89, 89, 86],
+        }
+        ]
+    };
+    const config2 = {
+        type: 'bar',
+        data: data2,        // GRAFICO 2
+        options: {}
+
+    };
+
+    const labels3 = [
+        'Janeiro',
+        'Fevereiro', //TEMPO GRAFICO LINHA 3
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho'
+    ]
+    const data3 = {
+        labels: labels3,
+        datasets: [{
+            label: 'Prejuizos por temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99,132)',
+            data: [1500, 1400, 1300, 750, 325, 159],
+        },                                          // GRAFICO 3
+        {
+            label: 'Prejuizos por Umidade',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0,255)',
+            data: [1200, 980, 760, 630, 250, 85],
+        }
+        ]
+    };
+    const config3 = {
+        type: 'line',
+        data: data3,         // GRAFICO1 
+        options: {}
+    };
+
+</script>
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'), // CRIAÇÃO DE GRAFICO1
+        config
+    );
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'), // CRIAÇÃO DE GRAFICO2
+        config2
+    );
+
+    const myChart3 = new Chart(
+        document.getElementById('myChart3'), // CRIAÇÃO DE GRAFICO3
+        config
+    );
+</script>
