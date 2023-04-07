@@ -1,0 +1,68 @@
+:root {
+    --bg_color_tm_dark: #303333;
+    --bg_page_tm_dark: #391010ce;
+    --borda_color_tm_dark: #ff4d4d;
+    --letra_dest_color_segundaria_tm_dark: #fb3838;
+    --letra_color_primaria_tm_dark: #e6e6e6;
+}
+/* 
+.dark_mode.body {
+    background: var(--bg_page_tm_dark);
+    background: linear-gradient(335deg, var(--bg_page_tm_dark) 25%, var(--bg_color_tm_dark) 72%, var(--bg_color_tm_dark) 100%);
+    transition: 0.6s;
+} */
+
+.dark_mode.body{
+    background-color: var(--bg_color_tm_dark);
+}
+
+
+.dark_mode {
+    transition: 0.6s;
+    color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode.menu {
+    background-color: var(--bg_color_tm_dark);
+}
+
+.dark_mode ul {
+    border-bottom: var(--borda_color_tm_dark) solid 2px;
+}
+
+.dark_mode ul li a {
+    color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode .active {
+    border-bottom: var(--borda_color_tm_dark);
+}
+
+.dark_mode .section_banner_inicial {
+    color: var(--letra_color_primaria_tm_dark);
+
+}
+
+.dark_mode .section_banner_inicial .imagem_banner_inicial img {
+    border: 3px solid var(--borda_color_tm_dark);
+}
+
+.dark_mode .section_caixa .caixa_introducao {
+    background: var(--bg_color_tm_dark);
+    color: var(--letra_color_primaria_tm_dark);
+    border: 3px solid var(--borda_color_tm_dark);
+
+}
+
+.dark_mode .section_caixa .caixa_introducao h2 {
+    color: var(--letra_dest_color_segundaria_tm_dark);
+}
+
+
+.dark_mode .section_caixa .caixa_introducao span {
+    color: var(--letra_dest_color_segundaria_tm_dark);
+}
+
+.dark_mode .section_caixa .caixa_introducao .texto_caixa_introducao {
+    color: var(--letra_color_primaria_tm_dark);
+}
