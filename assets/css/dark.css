@@ -1,20 +1,24 @@
 :root {
-    --bg_color_tm_dark: #303333;
-    --bg_page_tm_dark: #391010ce;
-    --borda_color_tm_dark: #ff4d4d;
-    --letra_dest_color_segundaria_tm_dark: #fb3838;
-    --letra_color_primaria_tm_dark: #e6e6e6;
+    --bg_color_tm_dark: #202222;
+    --bg_page_tm_dark: #3e0202e9;
+    --borda_color_tm_dark: #d24040;
+    --letra_dest_color_segundaria_tm_dark: #e14444;
+    --letra_color_primaria_tm_dark: #dad7d7;
 }
-/* 
+
+
+
 .dark_mode.body {
     background: var(--bg_page_tm_dark);
     background: linear-gradient(335deg, var(--bg_page_tm_dark) 25%, var(--bg_color_tm_dark) 72%, var(--bg_color_tm_dark) 100%);
     transition: 0.6s;
-} */
-
-.dark_mode.body{
-    background-color: var(--bg_color_tm_dark);
 }
+
+/*
+ .dark_mode.body{
+    background-color: var(--bg_color_tm_dark);
+    
+} */
 
 
 .dark_mode {
@@ -24,6 +28,10 @@
 
 .dark_mode.menu {
     background-color: var(--bg_color_tm_dark);
+}
+
+.dark_mode.menu .active{
+    border-bottom: 2px solid var(--borda_color_tm_dark);
 }
 
 .dark_mode ul {
@@ -45,12 +53,14 @@
 
 .dark_mode .section_banner_inicial .imagem_banner_inicial img {
     border: 3px solid var(--borda_color_tm_dark);
+    filter: grayscale(45%);
 }
 
 .dark_mode .section_caixa .caixa_introducao {
     background: var(--bg_color_tm_dark);
     color: var(--letra_color_primaria_tm_dark);
     border: 3px solid var(--borda_color_tm_dark);
+    box-shadow: 13px 5px 9px #00000080;
 
 }
 
@@ -65,4 +75,8 @@
 
 .dark_mode .section_caixa .caixa_introducao .texto_caixa_introducao {
     color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode .section_caixa .caixa_introducao .imagem_caixa{
+    filter: grayscale(40%);
 }
