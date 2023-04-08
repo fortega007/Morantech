@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementando o ChartJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gráficos ChartJS</h1>
+    <div class="box">
+        <div>
+            <canvas id="myChart" style="position: relative; height:40vh; width:40vw"></canvas>
+        </div>
+        <div>
+            <canvas id="myChart2" style="position: relative; height:40vh; width:40vw"></canvas>
+        </div>
+    </div>
+</body>
+<script>
+    const labels = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June'
+    ];
+
+    const data = {
+        labels, labels,
+        datasets : [{
+            label: 'My first dataset',
+            backgroundColor: 'rgb(255,0,0)',
+            borderColor: 'rgb(255,0,0)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+
+    const config2 = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+  </script>
+
+  <script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+  </script>
+</html>
