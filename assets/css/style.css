@@ -1,10 +1,11 @@
+/* ^ CSS padão ^ */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: monospace;
     text-decoration: none;
-
 }
 
 
@@ -24,8 +25,8 @@ body {
 
     background: var(--bg_page_tm_light);
     background: linear-gradient(335deg, var(--bg_page_tm_light) 25%, var(--bg_color_tm_light) 72%, var(--bg_color_tm_light) 100%);
-    transition: 0.6s;
-} 
+
+}
 
 
 /* body {
@@ -33,7 +34,7 @@ body {
 } */
 
 .menu {
-    background: var(--bg_color_tm_light);
+    /* background: var(--bg_color_tm_light); */
     transition: 0.6s;
 }
 
@@ -78,6 +79,7 @@ body {
 .menu ul li i {
     font-size: 25px;
     transition: 0.6s;
+    cursor: pointer;
 }
 
 .menu ul li a img:hover {
@@ -135,10 +137,10 @@ body {
 /*  */
 
 
-.titulo {
+/* .titulo {
     text-align: center;
     color: var(--letra_color_primaria_tm_light);
-}
+} */
 
 .section_caixa {
     padding: 2%;
@@ -151,7 +153,7 @@ body {
 .section_caixa .caixa_introducao {
 
     width: 300px;
-    height: 400px;
+    height: 410px;
     padding: 1%;
     border: 3px solid var(--borda_color_tm_light);
     /* border-radius: 12px; */
@@ -163,7 +165,10 @@ body {
 .section_caixa .caixa_introducao .texto_caixa_introducao {
     font-size: 15px;
     color: var(--letra_color_primaria_tm_light);
+    transition: 0.6s;
 }
+
+
 
 .section_caixa .caixa_introducao h2 {
     text-align: center;
@@ -171,6 +176,7 @@ body {
 }
 
 .section_caixa .caixa_introducao span {
+    padding-top: 5px;
     text-align: center;
     font-size: 20px;
     /* background: red; */
@@ -199,10 +205,81 @@ body {
 
 .section_caixa .caixa_introducao:hover {
     width: 320px;
-    height: 420px;
+    height: 430px;
     transition: 0.6s;
 }
 
+.servico {
+    display: flex;
+    flex-direction: column;
+
+    
+    margin-bottom: 30px;
+    
+}
+
+.servico .caixa_titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  
+
+}
+
+.servico .caixa_titulo h1{
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    color: var(--letra_color_primaria_tm_light);
+    border-bottom: 1px solid var(--borda_color_tm_light);
+    padding-bottom: 20px;
+}
+
+.servico .caixas_servicos_total {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
+.servico .caixas_servicos_total .caixa_servico {
+    width: 250px;
+    height: 350px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: 3px solid var(--borda_color_tm_light);
+    transition: 0.6s;
+color: var(--letra_color_primaria_tm_light);
+   background: var(--bg_color_tm_light);
+    box-shadow: 13px 5px 9px var(--letra_color_primaria_tm_light);
+}
+
+
+.servico .caixas_servicos_total .caixa_servico i {
+    font-size: 130px;
+    text-align: center;
+    color: var(--letra_dest_color_segundaria_tm_light);
+/* border: 2px solid blue; */
+}
+
+.servico .caixas_servicos_total .caixa_servico p {
+    font-size: 15px;
+  /* margin-top: 10px; */
+
+}
+
+.servico .caixas_servicos_total .caixa_servico span {
+    font-size: 20px;
+    /* background: red; */
+    color: var(--letra_dest_color_segundaria_tm_light);
+}
+
+
+.servico .caixas_servicos_total .caixa_servico:hover{
+    width: 260px;
+    height: 360px;
+}
 /*  https://border-radius.com */

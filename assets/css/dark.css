@@ -1,8 +1,11 @@
+/* ^ CSS dark mode ^ */
+
 :root {
-    --bg_color_tm_dark: #202222;
+    /* --bg_color_tm_dark: #151313; */
+    --bg_color_tm_dark: #1c1b1b;
     --bg_page_tm_dark: #3e0202e9;
-    --borda_color_tm_dark: #d24040;
-    --letra_dest_color_segundaria_tm_dark: #e14444;
+    --borda_color_tm_dark: #800404;
+    --letra_dest_color_segundaria_tm_dark: #de5d5d;
     --letra_color_primaria_tm_dark: #dad7d7;
 }
 
@@ -26,9 +29,6 @@
     color: var(--letra_color_primaria_tm_dark);
 }
 
-.dark_mode.menu {
-    background-color: var(--bg_color_tm_dark);
-}
 
 .dark_mode.menu .active{
     border-bottom: 2px solid var(--borda_color_tm_dark);
@@ -54,6 +54,7 @@
 .dark_mode .section_banner_inicial .imagem_banner_inicial img {
     border: 3px solid var(--borda_color_tm_dark);
     filter: grayscale(45%);
+    
 }
 
 .dark_mode .section_caixa .caixa_introducao {
@@ -79,4 +80,17 @@
 
 .dark_mode .section_caixa .caixa_introducao .imagem_caixa{
     filter: grayscale(40%);
+}
+
+.dark_mode .servico .caixa_titulo h1{
+    color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode .caixas_servicos_total .caixa_servico {
+    background-color: var(--bg_color_tm_dark);
+    color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode .servico .caixa_servico i{
+    color: var(--letra_color_primaria_tm_dark);
 }

@@ -1,10 +1,12 @@
 
+// & Script Dark Mode \(⌐■_■)ノ
+
 var mode = document.getElementById('tema');
 var body = document.getElementById('body');
 var menu = document.getElementById('menu');
 var sectBI = document.getElementById('section_banner_inicial');
-var titulo = document.getElementById('titulo');
-var secC = document.getElementById('section_caixa')
+var secC = document.getElementById('section_caixa');
+var servico = document.getElementById('servico');
 
 mode.addEventListener('click', () => {
     if (mode.classList.contains('fa-moon')) {
@@ -14,8 +16,8 @@ mode.addEventListener('click', () => {
         sectBI.classList.add('dark_mode');
         menu.classList.add('dark_mode');
         body.classList.add('dark_mode');
-        titulo.classList.add('dark_mode');
-        secC.classLista.add('dark_mode');
+        secC.classList.add('dark_mode');
+        servico.classList.add('dark_mode');
         
     }
     else {
@@ -25,8 +27,7 @@ mode.addEventListener('click', () => {
         sectBI.classList.remove('dark_mode');
         menu.classList.remove('dark_mode');
         body.classList.remove('dark_mode');
-        titulo.classList.remove('dark_mode');
-        secC.classLista.remove('dark_mode');
-        
+        secC.classList.remove('dark_mode');
+        servico.classList.remove('dark_mode');
     }
 })
