@@ -1,19 +1,20 @@
 /* ^ CSS dark mode ^ */
 
 :root {
-    /* --bg_color_tm_dark: #151313; */
     --bg_color_tm_dark: #1c1b1b;
-    --bg_page_tm_dark: #3e0202e9;
+    --bg_color_2_tm_dark: #151313;
+    --bg_page_tm_dark: #200202e9;
     --borda_color_tm_dark: #800404;
     --letra_dest_color_segundaria_tm_dark: #de5d5d;
     --letra_color_primaria_tm_dark: #dad7d7;
+    --sombra_tm_dark: #00000080;
 }
 
 
 
 .dark_mode.body {
     background: var(--bg_page_tm_dark);
-    background: linear-gradient(335deg, var(--bg_page_tm_dark) 25%, var(--bg_color_tm_dark) 72%, var(--bg_color_tm_dark) 100%);
+    background: linear-gradient(335deg, var(--bg_page_tm_dark) 25%, var(--bg_color_2_tm_dark) 72%, var(--bg_color_2_tm_dark) 100%);
     transition: 0.6s;
 }
 
@@ -30,11 +31,11 @@
 }
 
 
-.dark_mode.menu .active{
+.dark_mode.menu .active {
     border-bottom: 2px solid var(--borda_color_tm_dark);
 }
 
-.dark_mode ul {
+.dark_mode .menu ul {
     border-bottom: var(--borda_color_tm_dark) solid 2px;
 }
 
@@ -53,15 +54,15 @@
 
 .dark_mode .section_banner_inicial .imagem_banner_inicial img {
     border: 3px solid var(--borda_color_tm_dark);
-    filter: grayscale(45%);
-    
+    filter: grayscale(30%);
+
 }
 
 .dark_mode .section_caixa .caixa_introducao {
     background: var(--bg_color_tm_dark);
     color: var(--letra_color_primaria_tm_dark);
     border: 3px solid var(--borda_color_tm_dark);
-    box-shadow: 13px 5px 9px #00000080;
+    box-shadow: 13px 5px 9px var(--sombra_tm_dark);
 
 }
 
@@ -78,19 +79,63 @@
     color: var(--letra_color_primaria_tm_dark);
 }
 
-.dark_mode .section_caixa .caixa_introducao .imagem_caixa{
-    filter: grayscale(40%);
+.dark_mode .section_caixa .caixa_introducao .imagem_caixa {
+    filter: grayscale(20%);
 }
 
-.dark_mode .servico .caixa_titulo h1{
+.dark_mode .servico .caixa_titulo h1 {
     color: var(--letra_color_primaria_tm_dark);
 }
 
 .dark_mode .caixas_servicos_total .caixa_servico {
     background-color: var(--bg_color_tm_dark);
     color: var(--letra_color_primaria_tm_dark);
+    box-shadow: 13px 5px 9px var(--sombra_tm_dark);
 }
 
-.dark_mode .servico .caixa_servico i{
+.dark_mode .servico .caixa_servico i {
     color: var(--letra_color_primaria_tm_dark);
+}
+
+.dark_mode .footer {
+    background: var(--bg_color_tm_dark);
+}
+
+
+
+.dark_mode .facebook {
+    color: #0a0a71;
+}
+
+.dark_mode .instagram {
+    color: #ce8302;
+}
+
+.dark_mode .github {
+    color: #560056;
+}
+
+.dark_mode .linkedin {
+    color: #004c6f;
+
+}
+
+.dark_mode .facebook:hover {
+    color: #2121a9;
+
+}
+
+.dark_mode .instagram:hover {
+    color: #ea9504;
+
+}
+
+.dark_mode .github:hover {
+    color: #a521a5;
+
+}
+
+.dark_mode .linkedin:hover {
+    color: #156785;
+
 }
