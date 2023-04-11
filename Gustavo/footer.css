@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 75vh;
+    width: 100%;
+}
+
+body footer {
+    background-color: rgb(216, 54, 54);
+    color: white;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+body footer .list {
+    text-decoration: none;
+    list-style: none;
+}
+
+body footer .list-2 {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+body footer .division {
+    border-right: 2px solid black;
+    height: 20vh;
+}
