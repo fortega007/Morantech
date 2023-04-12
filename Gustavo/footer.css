@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 70vh;
+    width: 100%;
+}
+
+body footer {
+    background-color: rgb(216, 54, 54);
+    color: black;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+body footer .list {
+    list-style: none;
+}
+
+body footer .list-2 {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+body footer .division {
+    border-right: 2px solid black;
+    height: 20vh;
+}
+
+footer .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
