@@ -101,26 +101,7 @@
     background: var(--bg_color_tm_dark);
 }
 
-
-
-/* .dark_mode .facebook {
-    color: #0a0a71;
-}
-
-.dark_mode .instagram {
-    color: #ce8302;
-}
-
-.dark_mode .github {
-    color: #560056;
-}
-
-.dark_mode .linkedin {
-    color: #004c6f;
-
-} */
-
-.dark_mode .facebook:hover {
+/* .dark_mode .facebook:hover {
     color: #2121a9;
 
 }
@@ -138,4 +119,4 @@
 .dark_mode .linkedin:hover {
     color: #156785;
 
-}
+} */
