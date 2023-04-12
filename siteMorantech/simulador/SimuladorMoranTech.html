@@ -1,0 +1,68 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Financeiro - MoranTech</title>
+    <link rel="stylesheet" href="/simulador/css/simulador.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Serviços</a></li>
+        <li><a>Projeto</a></li>
+        <li><a>Feedbacks</a></li>
+        <li><a href="#">Simulador</a></li>
+      </ul>
+      <button class="button">Agendar reunião</button>
+    </nav>
+    <div class="container">
+      <div class="left-container">
+        <h1 class="titulo">Simulador Financeiro <br />MoranTech</h1>
+        <p>
+          Como sabemos, um dos principais fatores para o desperdício/perda do
+          morango é a falta do controle e monitoramento de temperatura e umidade
+          da fruta.
+        </p>
+        <p>A média desperdício gira em torno de 30% da quantidade total.</p>
+        <p>
+          O objetivo da Morantech é reduzir esse desperdício a 5% e aumentar os
+          ganhos de sua empresa.
+        </p>
+
+        <h4>Preencha os campos e veja os ganhos com a tecnologia MoranTech!</h4>
+      </div>
+
+      <div class="right-container">
+        <span>Quantidade de Morango que será Transportada:</span>
+        <input id="input_qtdMorangoKg" placeholder="(Kg)" /><br />
+        <span> Informe o valor pra o Kg do morango:</span>
+        <input id="input_valorMorango" placeholder="(R$)" /><br />
+        <span
+          >Informe sua porcentagem estimada de perda:
+          <span class="info">*</span></span
+        >
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="input_porcEstimadaCliente"
+          placeholder="(%)"
+        />
+        <p>
+          *Caso não insira o valor de porcentagem, vamos considerar a média de
+          30%.
+        </p>
+
+        <br />
+        <button onclick="simule()" class="botao">Simular</button>
+      </div>
+    </div>
+    <div class="hidden result">
+      <div class="comMoran">sadas <span id="comMoranT"></span></div>
+      <div class="semMoran">dasda <span id="semMoranT"></span></div>
+    </div>
+
+    <script src="/simulador/js/script.js"></script>
+  </body>
+</html>
