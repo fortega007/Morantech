@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.container .caixas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .caixas .box {
+    background-color: rgb(238, 50, 50);
+    color: white;
+    width: 60%;
+    border-radius: 10px;
+    padding: 2px 12px 12px 15px;
+    margin-bottom: 40px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.container .caixas .box img {
+    height: 30px;
+}
+
+.container .caixas .box p {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
